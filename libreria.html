@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Librería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Librería</h1>
+        <label for="libro">Selecciona un libro:</label>
+        <select id="libro">
+            <option value="harry">Harry Potter - $16,000</option>
+            <option value="dune">Dune - $21,000</option>
+            <option value="lotr">El Señor de los Anillos - $30,000</option>
+            <option value="fantasma">El Fantasma de la Ópera - $18,000</option>
+            <option value="frankenstein">Frankenstein - $17,000</option>
+        </select>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" value="1">
+        
+        <button type="button" onclick="agregarAlCarrito()">Agregar al carrito</button>
+        <button type="button" onclick="comprar()">Comprar</button>
+
+        <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
